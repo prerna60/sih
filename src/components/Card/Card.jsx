@@ -4,7 +4,10 @@ const Card = ({ title, borderColor, subtitle, img }) => {
   return (
     <div className={`${styles.card_wrapper} card-shadow`}>
       <div className={styles.card_box1}>
-        <div className={styles.card_img_cont} style={{borderColor:borderColor}}>
+        <div
+          style={{ borderColor: borderColor }}
+          className={styles.card_img_cont}
+        >
           <img src={img} alt="" className="rounded-full overflow-hidden " />
         </div>
       </div>
